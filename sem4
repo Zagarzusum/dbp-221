@@ -1,0 +1,117 @@
+import numpy as np
+x = np.arange(50, 101)
+print(x)
+
+2
+np.ones(10)
+np.zeros(10)
+np.repeat(6 , 10)
+
+3
+data = np.arange(20,32)
+np.reshape(data, (3, 4), "C")
+
+4
+np.diag([1,1,1]) 
+
+5
+np.diag([1,2,3,4,5])
+
+6
+data = [[1,2,3,4,5],[11,12,13,14,15]]
+
+data2 = np.array(data)
+np.sum(data2)
+np.sum(data2, axis = 0)
+np.sum(data2, axis = 1)
+
+7
+Seasons = ["2015","2016","2017","2018","2019","2020","2021"]
+
+Sdict = {"2015":0,"2016":1,"2017":2,"2018":3,"2019":4,"2020":5,"2021":6}
+
+#Salary
+
+KobeBryant_Salary = [25000000,0,0,0,0,0,0]
+
+JoeJohnson_Salary = [22309344,11000000,10254904,0,0,0,0]
+
+LeBronJames_Salary = [22970500,30963450,33285709,35654150,37436858,39219566,41180000]
+
+CarmeloAnthony_Salary = [22875000,24559380,26243760,2393887,2159029,2564753,2641691]
+
+DwightHoward_Salary = [22359364,23500000,23500000,24256725,2564753,2564753,2641691]
+
+ChrisBosh_Salary = [22192730, 23741060, 25289390, 26837720, 0,0,0]
+
+ChrisPaul_Salary = [21468695, 22868827,24268959, 35654150, 38506482, 41358814, 30800000]
+
+KevinDurant_Salary = [21971850,26540100,25000000,30000000,37199000,40108950,42018900]
+
+DerrickRose_Salary = [21323252,2116955,416533,2176260,7317074,7682926,13445120]
+
+DwayneWade_Salary = [20000000,23200000,15550000,2328652,2393887,2391886,2393887]
+
+Salary = np.array([KobeBryant_Salary, JoeJohnson_Salary, LeBronJames_Salary, CarmeloAnthony_Salary, DwightHoward_Salary, ChrisBosh_Salary, ChrisPaul_Salary, KevinDurant_Salary, DerrickRose_Salary, DwayneWade_Salary])
+
+#Games
+
+KobeBryant_G = [66,0,0,0,0,0,0]
+
+JoeJohnson_G = [81,78,55,0,0,0,1]
+
+LeBronJames_G = [76,74,82,55,67,45,46]
+
+CarmeloAnthony_G = [72,74,78,10,58,69,56]
+
+DwightHoward_G = [71,74,81,9,69,69,47]
+
+ChrisBosh_G = [31,32,0,0,0,0,0]
+
+ChrisPaul_G = [74,61,58,58,70,70,58]
+
+KevinDurant_G = [72,62,68,78,0,35,38]
+
+DerrickRose_G = [66,64,25,51,50,50,26]
+
+DwayneWade_G = [74,60,67,46,21,72,0]
+
+Games = np.array([KobeBryant_Salary, JoeJohnson_Salary, LeBronJames_Salary, CarmeloAnthony_Salary, DwightHoward_Salary, ChrisBosh_Salary, ChrisPaul_Salary, KevinDurant_Salary, DerrickRose_Salary, DwayneWade_Salary])
+
+#Points
+
+KobeBryant_PTS = [1161,0,0,0,0,0,0]
+
+JoeJohnson_PTS = [992,715,372,0,0,0,2]
+
+LeBronJames_PTS = [1920,1954,2251,1505,1698,1126,1353]
+
+CarmeloAnthony_PTS = [1573,1659,1261,134,895,924,767]
+
+DwightHoward_PTS = [976,1002,1347,115,517,482,249]
+
+ChrisBosh_PTS = [1010,0,0,0,0,0,0]
+
+ChrisPaul_PTS = [1446,1104,1081,906,1232,1149,86]
+
+KevinDurant_PTS = [2029,1555,1792,2027,0,943,0]
+
+DerrickRose_PTS = [1080,1154,209,917,904,734,311]
+
+DwayneWade_PTS = [1409,1096,765,1,0,0,0]
+
+Points = np.array([KobeBryant_PTS, JoeJohnson_PTS, LeBronJames_PTS, CarmeloAnthony_PTS, DwightHoward_PTS, ChrisBosh_PTS, ChrisPaul_PTS, KevinDurant_PTS, DerrickRose_PTS, DwayneWade_PTS])             
+
+
+
+print("Salaries",np.sum(Salary, axis = 1))
+
+print("Salaries",np.sum(Salary, axis = 0))
+
+print("Games",np.sum(Games, axis = 1))
+
+print("Games",np.sum(Games, axis = 0))
+
+print("Points", np.sum(Points, axis = 1))
+
+print("Points",np.sum(Points, axis = 0))
